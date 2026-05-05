@@ -1,0 +1,58 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/showcase-operations-master/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/showcase-operations-master/",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/showcase-operations-master/",
+              "sidebar": "projectsSidebar"
+            },
+            {
+              "id": "projects/ad9001",
+              "path": "/showcase-operations-master/projects/ad9001",
+              "sidebar": "projectsSidebar"
+            },
+            {
+              "id": "projects/ad9002",
+              "path": "/showcase-operations-master/projects/ad9002",
+              "sidebar": "projectsSidebar"
+            },
+            {
+              "id": "projects/ad9003",
+              "path": "/showcase-operations-master/projects/ad9003",
+              "sidebar": "projectsSidebar"
+            },
+            {
+              "id": "projects/shc-demo-001",
+              "path": "/showcase-operations-master/projects/shc-demo-001",
+              "sidebar": "projectsSidebar"
+            },
+            {
+              "id": "templates/project-template",
+              "path": "/showcase-operations-master/templates/project-template",
+              "sidebar": "projectsSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "projectsSidebar": {
+              "link": {
+                "path": "/showcase-operations-master/",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

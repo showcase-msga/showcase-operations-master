@@ -1,0 +1,82 @@
+{
+  "/showcase-operations-master/__docusaurus/debug-8a8": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---showcase-operations-master-docusaurus-debugb-38-a56"
+    }
+  },
+  "/showcase-operations-master/__docusaurus/debug/config-55b": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---showcase-operations-master-docusaurus-debugb-38-a56"
+    }
+  },
+  "/showcase-operations-master/__docusaurus/debug/content-83a": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---showcase-operations-master-docusaurus-debugb-38-a56"
+    },
+    "__props": "__props---showcase-operations-master-docusaurus-debug-content-8-b-0-65c"
+  },
+  "/showcase-operations-master/__docusaurus/debug/globalData-667": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---showcase-operations-master-docusaurus-debugb-38-a56"
+    }
+  },
+  "/showcase-operations-master/__docusaurus/debug/metadata-303": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---showcase-operations-master-docusaurus-debugb-38-a56"
+    }
+  },
+  "/showcase-operations-master/__docusaurus/debug/registry-eac": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---showcase-operations-master-docusaurus-debugb-38-a56"
+    }
+  },
+  "/showcase-operations-master/__docusaurus/debug/routes-eec": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---showcase-operations-master-docusaurus-debugb-38-a56"
+    }
+  },
+  "/showcase-operations-master/-ad3": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---showcase-operations-master-aba-a82"
+    }
+  },
+  "/showcase-operations-master/-84d": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---showcase-operations-master-dc-6-c71"
+  },
+  "/showcase-operations-master/-d6d": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/showcase-operations-master/projects/ad9001-9ae": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---showcase-operations-master-projects-ad-9001836-02a"
+  },
+  "/showcase-operations-master/projects/ad9002-06f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---showcase-operations-master-projects-ad-9002-d-75-d7c"
+  },
+  "/showcase-operations-master/projects/ad9003-9e8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---showcase-operations-master-projects-ad-9003-b-57-adf"
+  },
+  "/showcase-operations-master/projects/shc-demo-001-b4d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---showcase-operations-master-projects-shc-demo-001-ca-2-101"
+  },
+  "/showcase-operations-master/templates/project-template-00a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---showcase-operations-master-templates-project-templatee-8-f-7d5"
+  },
+  "/showcase-operations-master/-3e5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---showcase-operations-master-0-e-3-aaf"
+  }
+}

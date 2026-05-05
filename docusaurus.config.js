@@ -1,23 +1,20 @@
 // @ts-check
 // Docusaurus config for Showcase Operations Master
-// Docs: https://docusaurus.io/docs/api/docusaurus-config
+// Brand-aligned with showcase.space / ad-group.com.au design language
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Showcase Operations Master',
-  tagline: 'Project knowledge base for Showcase Tech Ops',
-  favicon: 'img/favicon.ico',
+  title: 'showcase ops',
+  tagline: 'internal knowledge base for showcase tech ops',
+  favicon: 'img/favicon.svg',
 
-  // Site URL: this is where the site will be hosted
   url: 'https://showcase-msga.github.io',
-  // baseUrl: must match your repo name with leading and trailing slashes
   baseUrl: '/showcase-operations-master/',
 
-  // GitHub Pages deployment config
-  organizationName: 'showcase-msga', // GitHub org or username
-  projectName: 'showcase-operations-master', // Repo name
+  organizationName: 'showcase-msga',
+  projectName: 'showcase-operations-master',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -36,12 +33,10 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Set the docs as the root of the site (no /docs prefix in URLs)
           routeBasePath: '/',
-          // Hide "Edit this page" links (you edit in Obsidian, not GitHub UI)
           editUrl: undefined,
         },
-        blog: false, // No blog needed
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -52,31 +47,32 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with project social card later if you want
       image: 'img/social-card.png',
       navbar: {
-        title: 'Showcase Ops',
+        title: '',
         logo: {
-          alt: 'Showcase Ops Logo',
+          alt: 'showcase',
           src: 'img/logo.svg',
+          srcDark: 'img/logo-dark.svg',
+          width: 140,
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'projectsSidebar',
             position: 'left',
-            label: 'Projects',
+            label: 'projects',
           },
           {
             href: 'https://github.com/showcase-msga/showcase-operations-master',
-            label: 'GitHub',
+            label: 'github',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
-        copyright: `© ${new Date().getFullYear()} AD Group — Showcase Tech Ops. Internal use only.`,
+        style: 'light',
+        copyright: `© ${new Date().getFullYear()} AD Group · Showcase Tech Ops · Internal Use Only`,
       },
       prism: {
         theme: prismThemes.github,
@@ -85,6 +81,10 @@ const config = {
       colorMode: {
         defaultMode: 'light',
         respectPrefersColorScheme: true,
+      },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 3,
       },
     }),
 };

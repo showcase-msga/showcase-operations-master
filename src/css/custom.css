@@ -1,37 +1,476 @@
 /**
- * Showcase Operations Master — custom theme
- * Tweak the brand colours here when you're ready to theme it.
+ * Showcase Operations Master
+ * Theme aligned with showcase.space / ad-group.com.au
+ *
+ * Design language: black/white minimalist, editorial, lots of whitespace,
+ * lowercase navigation, sans-serif throughout, restrained accents.
  */
 
+/* ─── Typography ────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap');
+
 :root {
-  --ifm-color-primary: #2e6dd9;
-  --ifm-color-primary-dark: #2862c4;
-  --ifm-color-primary-darker: #265dbd;
-  --ifm-color-primary-darkest: #1f4d9c;
-  --ifm-color-primary-light: #4781de;
-  --ifm-color-primary-lighter: #5489e0;
-  --ifm-color-primary-lightest: #7aa3e8;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --ifm-heading-font-family: 'Inter', sans-serif;
+  --ifm-heading-font-weight: 600;
+  --ifm-font-weight-base: 400;
+  --ifm-line-height-base: 1.6;
 }
+
+/* ─── Light theme palette ───────────────────────────────────────── */
+
+:root {
+  --ifm-color-primary: #000000;
+  --ifm-color-primary-dark: #000000;
+  --ifm-color-primary-darker: #000000;
+  --ifm-color-primary-darkest: #000000;
+  --ifm-color-primary-light: #1a1a1a;
+  --ifm-color-primary-lighter: #333333;
+  --ifm-color-primary-lightest: #4d4d4d;
+
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #ffffff;
+
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-padding-vertical: 1rem;
+
+  --ifm-footer-background-color: #fafafa;
+  --ifm-footer-color: #6b6b6b;
+
+  --ifm-link-color: #000000;
+  --ifm-link-hover-color: #6b6b6b;
+  --ifm-link-decoration: none;
+
+  --ifm-color-emphasis-100: #fafafa;
+  --ifm-color-emphasis-200: #f4f4f4;
+  --ifm-color-emphasis-300: #e5e5e5;
+  --ifm-color-emphasis-600: #6b6b6b;
+  --ifm-color-emphasis-700: #404040;
+  --ifm-color-emphasis-800: #1a1a1a;
+  --ifm-color-emphasis-900: #000000;
+
+  --ifm-heading-color: #000000;
+  --ifm-font-color-base: #1a1a1a;
+
+  --ifm-code-background: #f4f4f4;
+  --ifm-code-color: #000000;
+  --ifm-code-font-size: 90%;
+
+  --ifm-table-stripe-background: #fafafa;
+  --ifm-table-border-color: #e5e5e5;
+  --ifm-table-head-background: #ffffff;
+  --ifm-table-head-color: #6b6b6b;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+}
+
+/* ─── Dark theme palette ────────────────────────────────────────── */
 
 [data-theme='dark'] {
-  --ifm-color-primary: #6a9eff;
-  --ifm-color-primary-dark: #4a8aff;
-  --ifm-color-primary-darker: #3a80ff;
-  --ifm-color-primary-darkest: #0966ff;
-  --ifm-color-primary-light: #8ab2ff;
-  --ifm-color-primary-lighter: #9abcff;
-  --ifm-color-primary-lightest: #c9dcff;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #ffffff;
+  --ifm-color-primary-dark: #e5e5e5;
+  --ifm-color-primary-darker: #b3b3b3;
+  --ifm-color-primary-darkest: #808080;
+  --ifm-color-primary-light: #ffffff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
+
+  --ifm-background-color: #0a0a0a;
+  --ifm-background-surface-color: #0a0a0a;
+
+  --ifm-navbar-background-color: #0a0a0a;
+  --ifm-footer-background-color: #050505;
+  --ifm-footer-color: #808080;
+
+  --ifm-link-color: #ffffff;
+  --ifm-link-hover-color: #b3b3b3;
+
+  --ifm-color-emphasis-100: #1a1a1a;
+  --ifm-color-emphasis-200: #2a2a2a;
+  --ifm-color-emphasis-300: #404040;
+
+  --ifm-heading-color: #ffffff;
+  --ifm-font-color-base: #e5e5e5;
+
+  --ifm-code-background: #1a1a1a;
+  --ifm-code-color: #ffffff;
+
+  --ifm-table-stripe-background: #1a1a1a;
+  --ifm-table-border-color: #2a2a2a;
+  --ifm-table-head-background: #0a0a0a;
+  --ifm-table-head-color: #b3b3b3;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
 }
 
-/* Tighter line height in tables for hardware data */
-table {
-  font-size: 0.92rem;
+/* ─── Global resets ─────────────────────────────────────────────── */
+
+body {
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Pull main content closer to the sidebar on wide screens */
-.main-wrapper {
+/* Lowercase headings to match brand */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-transform: lowercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: lowercase;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  text-transform: lowercase;
+}
+
+h4, h5, h6 {
+  text-transform: lowercase;
+  letter-spacing: -0.01em;
+}
+
+/* ─── Navbar ────────────────────────────────────────────────────── */
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  height: 64px;
+}
+
+.navbar__logo {
+  height: 28px;
+}
+
+.navbar__logo img {
+  height: 100%;
+  width: auto;
+}
+
+.navbar__items {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  letter-spacing: -0.01em;
+}
+
+.navbar__link {
+  color: var(--ifm-color-emphasis-700);
+  transition: color 0.15s ease;
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* ─── Sidebar ───────────────────────────────────────────────────── */
+
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-color-emphasis-300) !important;
+}
+
+.menu {
+  padding: 1.5rem 1rem !important;
+  font-size: 0.875rem;
+}
+
+.menu__list-item-collapsible,
+.menu__link {
+  border-radius: 0;
+  font-weight: 400;
+  padding: 0.5rem 0.75rem;
+  transition: background 0.15s ease;
+}
+
+.menu__link {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.menu__link:hover {
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-primary);
+}
+
+.menu__link--active {
+  background: var(--ifm-color-emphasis-100) !important;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 500;
+}
+
+.menu__caret {
+  padding: 0.25rem;
+}
+
+/* Sidebar category headings (Projects, Templates) */
+.menu__list-item-collapsible .menu__link {
+  text-transform: lowercase;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-600);
+  letter-spacing: 0.02em;
+  font-size: 0.75rem;
+}
+
+/* ─── Main content area ─────────────────────────────────────────── */
+
+main {
+  background: var(--ifm-background-color);
+}
+
+article {
   max-width: 100%;
+}
+
+.markdown {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.markdown > p {
+  margin-bottom: 1.25rem;
+}
+
+.markdown a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.markdown a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* ─── Tables (the most important element for this dashboard) ────── */
+
+table {
+  display: table;
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+table thead tr {
+  background: var(--ifm-table-head-background) !important;
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+}
+
+table thead th {
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  color: var(--ifm-table-head-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+}
+
+table tbody tr {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background: transparent !important;
+  transition: background 0.1s ease;
+}
+
+table tbody tr:hover {
+  background: var(--ifm-color-emphasis-100) !important;
+}
+
+table tbody td {
+  padding: 0.75rem 1rem;
+  vertical-align: top;
+}
+
+/* Don't stripe tables; cleaner without */
+table tr:nth-child(2n) {
+  background: transparent !important;
+}
+
+/* ─── Code blocks ───────────────────────────────────────────────── */
+
+code {
+  background: var(--ifm-code-background);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.prism-code {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* ─── Admonitions (info, warning, etc) ──────────────────────────── */
+
+.admonition,
+.theme-admonition {
+  border-radius: 4px;
+  border-left-width: 3px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  background: var(--ifm-color-emphasis-100) !important;
+  border-color: var(--ifm-color-emphasis-700) !important;
+}
+
+.admonition-heading,
+.theme-admonition-heading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* ─── Blockquotes ───────────────────────────────────────────────── */
+
+blockquote {
+  background: var(--ifm-color-emphasis-100);
+  border-left: 3px solid var(--ifm-color-emphasis-600);
+  padding: 0.75rem 1.25rem;
+  margin: 1.25rem 0;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  font-style: normal;
+}
+
+blockquote p {
+  margin-bottom: 0.5rem;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Lists ─────────────────────────────────────────────────────── */
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.4rem;
+}
+
+/* Task lists (checkboxes) */
+ul.contains-task-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.contains-task-list li {
+  padding-left: 0;
+}
+
+input[type="checkbox"] {
+  accent-color: #000000;
+  margin-right: 0.5rem;
+}
+
+[data-theme='dark'] input[type="checkbox"] {
+  accent-color: #ffffff;
+}
+
+/* ─── Footer ────────────────────────────────────────────────────── */
+
+.footer {
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  padding: 2rem 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.footer__copyright {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ─── Pagination (Previous/Next page links at bottom) ───────────── */
+
+.pagination-nav__link {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  transition: all 0.15s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.pagination-nav__sublabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.pagination-nav__label {
+  font-weight: 500;
+}
+
+/* ─── Search ────────────────────────────────────────────────────── */
+
+.DocSearch-Button {
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+/* ─── Theme toggle ──────────────────────────────────────────────── */
+
+.clean-btn[class*='colorModeToggle'] {
+  margin-left: 0.5rem;
+}
+
+/* ─── Responsive ────────────────────────────────────────────────── */
+
+@media (max-width: 996px) {
+  h1 { font-size: 1.875rem; }
+  h2 { font-size: 1.375rem; }
+  h3 { font-size: 1.125rem; }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  table thead th,
+  table tbody td {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* ─── Custom: Status labels for project pages ───────────────────── */
+
+/* Use these in markdown via inline HTML for consistent status formatting */
+.status-active {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }

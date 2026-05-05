@@ -1,0 +1,25 @@
+{
+  "id": "intro",
+  "title": "showcase ops",
+  "description": "Internal knowledge base for the Showcase Tech Ops team. Per-project records, hardware maps, contacts, and operational notes.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/showcase-operations-master/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "showcase ops",
+    "sidebar_position": 1,
+    "slug": "/"
+  },
+  "sidebar": "projectsSidebar",
+  "next": {
+    "title": "AD9001 Riverside Quarter",
+    "permalink": "/showcase-operations-master/projects/ad9001"
+  }
+}

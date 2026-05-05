@@ -1,0 +1,25 @@
+{
+  "id": "templates/project-template",
+  "title": "Project Template",
+  "description": "— [Project Name]",
+  "source": "@site/docs/templates/project-template.md",
+  "sourceDirName": "templates",
+  "slug": "/templates/project-template",
+  "permalink": "/showcase-operations-master/templates/project-template",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "project-template",
+    "title": "Project Template",
+    "sidebar_label": "Project Template",
+    "sidebar_position": 1
+  },
+  "sidebar": "projectsSidebar",
+  "previous": {
+    "title": "SHC-DEMO-001",
+    "permalink": "/showcase-operations-master/projects/shc-demo-001"
+  }
+}

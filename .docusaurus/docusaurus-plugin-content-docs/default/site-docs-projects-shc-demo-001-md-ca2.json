@@ -1,0 +1,30 @@
+{
+  "id": "projects/shc-demo-001",
+  "title": "SHC-DEMO-001 — Demo Harbour Residences",
+  "description": "⚠️ Demo data only. This is a placeholder project to test the site structure. No real client information.",
+  "source": "@site/docs/projects/shc-demo-001.md",
+  "sourceDirName": "projects",
+  "slug": "/projects/shc-demo-001",
+  "permalink": "/showcase-operations-master/projects/shc-demo-001",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "shc-demo-001",
+    "title": "SHC-DEMO-001 — Demo Harbour Residences",
+    "sidebar_label": "SHC-DEMO-001",
+    "lifecycle_stage": "Support",
+    "state": "NSW",
+    "go_live_date": "2026-01-15T00:00:00.000Z"
+  },
+  "sidebar": "projectsSidebar",
+  "previous": {
+    "title": "AD9003 Coral Edge Residences",
+    "permalink": "/showcase-operations-master/projects/ad9003"
+  },
+  "next": {
+    "title": "Project Template",
+    "permalink": "/showcase-operations-master/templates/project-template"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "projects/ad9002",
+  "title": "AD9002 — Marina Heights",
+  "description": "Placeholder pricing, fake billing entity, fake contacts.",
+  "source": "@site/docs/projects/ad9002.md",
+  "sourceDirName": "projects",
+  "slug": "/projects/ad9002",
+  "permalink": "/showcase-operations-master/projects/ad9002",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "ad9002",
+    "title": "AD9002 — Marina Heights",
+    "sidebar_label": "AD9002 Marina Heights",
+    "booking_id": "AD9002",
+    "lifecycle_stage": "Support",
+    "state": "VIC",
+    "go_live_date": "2025-11-08T00:00:00.000Z"
+  },
+  "sidebar": "projectsSidebar",
+  "previous": {
+    "title": "AD9001 Riverside Quarter",
+    "permalink": "/showcase-operations-master/projects/ad9001"
+  },
+  "next": {
+    "title": "AD9003 Coral Edge Residences",
+    "permalink": "/showcase-operations-master/projects/ad9003"
+  }
+}

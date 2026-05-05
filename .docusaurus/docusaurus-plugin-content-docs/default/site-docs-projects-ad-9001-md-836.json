@@ -1,0 +1,31 @@
+{
+  "id": "projects/ad9001",
+  "title": "AD9001 — Riverside Quarter",
+  "description": "Placeholder pricing, fake billing entity, fake contacts.",
+  "source": "@site/docs/projects/ad9001.md",
+  "sourceDirName": "projects",
+  "slug": "/projects/ad9001",
+  "permalink": "/showcase-operations-master/projects/ad9001",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "ad9001",
+    "title": "AD9001 — Riverside Quarter",
+    "sidebar_label": "AD9001 Riverside Quarter",
+    "booking_id": "AD9001",
+    "lifecycle_stage": "Hardware Procurement",
+    "state": "NSW",
+    "go_live_date": "2026-08-15T00:00:00.000Z"
+  },
+  "sidebar": "projectsSidebar",
+  "previous": {
+    "title": "showcase ops",
+    "permalink": "/showcase-operations-master/"
+  },
+  "next": {
+    "title": "AD9002 Marina Heights",
+    "permalink": "/showcase-operations-master/projects/ad9002"
+  }
+}
