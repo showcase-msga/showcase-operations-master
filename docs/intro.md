@@ -5,6 +5,8 @@ sidebar_position: 1
 slug: /
 ---
 
+testtest
+
 # Showcase Operations Master
 
 Internal knowledge base for the Showcase Tech Ops team. Per-project records, hardware maps, contacts, and operational notes.
